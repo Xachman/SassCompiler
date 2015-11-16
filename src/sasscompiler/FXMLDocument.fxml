@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600" prefWidth="800" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sasscompiler.FXMLDocumentController">
+    <children>
+        <Label layoutX="86" layoutY="25"  text="Path to Sass file." />
+        <TextField  layoutX="86" layoutY="50" prefWidth="300" fx:id="sassFile" />
+        <Label layoutX="426" layoutY="25" text="Path to output CSS file." />
+        <TextField fx:id="compileFile" layoutX="426" layoutY="50" prefWidth="300" />
+        <Button layoutX="86" layoutY="90" text="Browse" onAction="#handleBrowseFileAction" fx:id="searchSass" />
+        <Button layoutX="426" layoutY="90" text="Browse" onAction="#handleBrowseFileAction" fx:id="searchCss" />
+        <Button layoutX="86" layoutY="130" text="Watch Files" onAction="#handleAddButtonAction" fx:id="addButton" />
+        <Label layoutX="126" layoutY="160" minHeight="16" minWidth="69" fx:id="label" />
+    </children>
+</AnchorPane>
